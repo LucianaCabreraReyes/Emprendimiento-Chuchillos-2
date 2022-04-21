@@ -200,9 +200,6 @@ h3 {
     height: 500px;
 }
 
-.fotos__content img {
-    width: 100%;
-}
 @media screen and (min-width:1200px) {
     .principal {
         display: grid;
