@@ -43,17 +43,6 @@ p {
     src: url("./fonts/Cabin/Cabin-Italic-VariableFont_wdth\,wght.ttf");
 }
 
-.card__redes {
-    width: 50px;
-    height: 30px;
-    margin-left: 300px;
-}
-
-.card__fb {
-    width: 28px;
-    margin-left: 300px;
-    text-decoration: none;
-}
 
 header {
     text-align: center;
@@ -72,6 +61,10 @@ header {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
+    width: 90%;
+    height: 90%;
+    object-fit: cover;
+    margin-left: 15px;
 }
 
 .imagenPrincipal {
@@ -80,7 +73,6 @@ header {
     object-fit: cover;
     margin-left: 15px;
 }
-
 .gridInicio {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -123,15 +115,15 @@ header {
     padding-left: 1rem;
     padding-right: 1rem;
 }
-
+body{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
 footer {
     background-color: grey;
-    margin-top: 300px;
-}
-
-.formularios {
-    font-family: "cabin";
-    color: rgb(43, 38, 38);
+    margin-top: auto;
 }
 
 h3 {
@@ -142,63 +134,12 @@ h3 {
     margin-top: 10px;
 }
 
-.login__btn {
-    background-color: black;
-    border-radius: 3px;
-    width: 30%;
-    padding: 2px;
-    text-decoration: none;
-    font-family: "Cabin";
-    color: snow;
-    text-align: center;
+button {
+    padding-bottom: 10px;
 }
 
-.singIn__btn {
-    background-color: black;
-    border-radius: 3px;
-    width: 30%;
-    padding: 2px;
-    text-decoration: none;
-    font-family: "Cabin";
-    color: snow;
-    text-align: center;
-}
 
-.send__btn {
-    background-color: black;
-    border-radius: 3px;
-    width: 30%;
-    padding: 2px;
-    text-decoration: none;
-    font-family: "Cabin";
-    color: snow;
-    text-align: center;
-}
 
-.contenedorGaleria {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-
-}
-
-.galeria {
-    text-align: center;
-    margin-bottom: 20px;
-    padding: 5px;
-    flex-direction: row;
-    align-content: stretch;
-
-}
-.imgGaleria {
-    height: 300px;
-    width: 300px;
-    transition: height 2s;
-    overflow-x: hidden;
-}
-.imgGaleria:hover {
-    height: 500px;
-}
 
 @media screen and (min-width:1200px) {
     .principal {
@@ -242,13 +183,6 @@ h3 {
 
 
 @media screen and (max-width: 320px) {
-    .contenedorGaleria {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-        overflow-x: hidden;
-
-    }
 
     header {
         overflow-x: hidden;
@@ -298,20 +232,7 @@ h3 {
 
     }
 
-    .card__redes {
-        width: 5%;
-        height: 5%;
-
-
-    }
-
-    .card__fb {
-        width: 3%;
-        text-decoration: none;
-
-
-    }
-
+    
     .gridInicio {
         display: grid;
         grid-template-columns: 1fr;

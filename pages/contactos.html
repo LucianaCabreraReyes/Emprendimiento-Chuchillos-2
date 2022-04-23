@@ -32,34 +32,20 @@
     <main class="formularios">
         <section>
             <h2>Contacto</h2>
+            
             <h3>Envie su consulta</h3>
         </section>
 
-        <div>
-            <form action="">
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Su Mail</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="sumail@ejemplo.com">
         </div>
-        <div>
-            <label for="name">Nombre</label>
-            <input type="text">
-
+        <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Escriba aqui su consulta.</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
         </div>
-
-        <div>
-            <label for="mail">Su mail</label>
-            <input type="mail">
+        <button type="button" class="btn btn-dark">Enviar</button>
         </div>
-
-        <div>
-            <label for="text">Haga su consulta aqui</label>
-            <div class="form-floating">
-                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 80px;"></textarea>
-    
-              </div>
-
-        <div>
-            <a href="#" class="send__btn">Enviar</a>
-        </div>
-
         <div>
             <label for="newsletter">
                 ¿Quieres recibir novedades?
@@ -67,29 +53,20 @@
             <input type="checkbox" name="newsletter" id="newsletter" value="aceptar">
         </div>
 
-        </form>
-
     </main>
-    <div class="container-flex">
-        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-          <div class="col-md-4 d-flex align-items-center">
-            <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
-              <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
-            </a>
-            <span class="text-muted"></span>
-          </div>
-      
-          <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-            <li class="ms-3"><a class="text-muted" href="https://www.facebook.com/alejandro.fernandez.543792"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
-            <i class="fa-brands fa-facebook"></i>
-            <li class="ms-3"><a class="text-muted" href="https://www.instagram.com/cuchillos_benjamin/" ><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
-            <i class="fa-brands fa-instagram"></i>
-            <li class="ms-3"><a class="text-muted" href="https://wa.me/+5491130181597/?"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
-            <i class="fa-brands fa-whatsapp"></i>
-          </ul>
-        </footer>
-      </div>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script> 
+
+    <footer>
+        <a href="https://www.facebook.com/alejandro.fernandez.543792"></a>
+        <i class="fa-brands fa-facebook"></i>
+        <a href="https://www.instagram.com/cuchillos_benjamin/"></a>
+        <i class="fa-brands fa-instagram"></i>
+        <a href="https://wa.me/+5491130181597/?"></a>
+        <i class="fa-brands fa-whatsapp"></i>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
