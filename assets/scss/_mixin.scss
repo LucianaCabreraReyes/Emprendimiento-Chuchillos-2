@@ -1,0 +1,7 @@
+@mixin boton ($padding) {
+    padding-bottom: $padding;  
+}
+
+.boton {
+    @include boton (padding-bottom, 15px)
+};
