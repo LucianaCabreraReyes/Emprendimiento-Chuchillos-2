@@ -1,7 +1,7 @@
-@mixin boton ($padding) {
-    padding-bottom: $padding;  
+@mixin boton ($margin) {
+    margin-top: $margin;  
 }
 
 .boton {
-    @include boton (padding-bottom, 15px)
-};
+    @include boton (15px);
+}
