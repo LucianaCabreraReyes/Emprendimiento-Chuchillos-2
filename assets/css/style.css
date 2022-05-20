@@ -16,7 +16,7 @@
   box-sizing: border-box; }
 
 h2 {
-  font-family: "cabin";
+  font-family: "bebas";
   color: #2b2626;
   letter-spacing: 2px;
   margin-top: 20px;
@@ -135,8 +135,7 @@ h5 {
   font-family: "bebas"; }
 
 .formularios {
-  font-family: "bebas";
-  text-align: center; }
+  font-family: "bebas"; }
 
 @media screen and (min-width: 1200px) {
   .principal {
@@ -188,7 +187,7 @@ h5 {
       width: 60%; }
   h3 {
     display: flex;
-    font-family: "cabin";
+    font-family: "bebas";
     color: black;
     text-align: center;
     width: 60%; }
@@ -221,7 +220,7 @@ h5 {
       overflow-x: hidden; }
   h2 {
     display: flex;
-    font-family: "cabin";
+    font-family: "bebas";
     color: black;
     text-align: center;
     width: 60%;

@@ -17,7 +17,7 @@ $color-login: rgb(43, 38, 38);
 
 
 h2 {
-    font-family: "cabin";
+    font-family: "bebas";
     color: $color-titulos;
     letter-spacing: 2px;
     margin-top: 20px;
@@ -45,7 +45,7 @@ header {
     left: 0px;
     top: 0px;
     font-family: "bebas";
-    color: $header-color-letras;    
+    color: $header-color-letras;
     text-decoration: none;
 
     h1 {
@@ -61,14 +61,16 @@ header {
         text-align: center;
 
     }
+
     .link {
         text-align: center;
         align-items: stretch;
         width: 100%;
         justify-content: space-around;
         display: block;
-       
+
     }
+
     a {
         color: $header-color-letras;
         text-decoration: none;
@@ -76,10 +78,10 @@ header {
 
         &:hover {
             color: $color-texto;
-             
-            }
+
+        }
     }
-    
+
 }
 
 p {
@@ -121,17 +123,18 @@ p {
     width: 100%;
     text-align: center;
     font-family: "bebas";
-    
+
     a {
         color: $color-titulos;
         padding-left: 1rem;
         padding-right: 1rem;
         text-decoration: none;
-&:hover {
-color: $color-texto;
- 
-}
- }
+
+        &:hover {
+            color: $color-texto;
+
+        }
+    }
 }
 
 .contenedorLogin {
@@ -158,11 +161,11 @@ footer {
 }
 
 h3 {
-    
+
     font-family: "cabin";
     color: $color-texto;
     text-align: center;
-    
+
 }
 
 button {
@@ -170,13 +173,12 @@ button {
 }
 
 h5 {
-text-align: center;
-font-family: "bebas";
+    text-align: center;
+    font-family: "bebas";
 }
 
 .formularios {
     font-family: "bebas";
-    text-align: center;
 }
 
 @media screen and (min-width:1200px) {
@@ -222,12 +224,13 @@ font-family: "bebas";
     }
 
 }
+
 .imagenesProductos {
     margin-top: 30px;
     margin-bottom: 30px;
     margin-left: 30px;
     margin-right: 30px;
-  
+
 }
 
 
@@ -263,7 +266,7 @@ font-family: "bebas";
 
     h3 {
         display: flex;
-        font-family: "cabin";
+        font-family: "bebas";
         color: $header-backround-color;
         text-align: center;
         width: 60%;
@@ -313,7 +316,7 @@ font-family: "bebas";
 
     h2 {
         display: flex;
-        font-family: "cabin";
+        font-family: "bebas";
         color: $header-backround-color;
         text-align: center;
         width: 60%;
