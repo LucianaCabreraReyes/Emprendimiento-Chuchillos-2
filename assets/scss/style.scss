@@ -1,0 +1,333 @@
+@import 'mixin';
+@import 'maps';
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+$header-backround-color: black;
+$header-color-letras: snow;
+$color-titulos: rgb(43, 38, 38);
+$color-texto: grey;
+$footer-backround-color: grey;
+$footer-backround-mobile: rgb(48, 46, 46);
+$color-login: rgb(43, 38, 38);
+
+
+h2 {
+    font-family: "bebas";
+    color: $color-titulos;
+    letter-spacing: 2px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+
+}
+
+@font-face {
+    font-family: "bebas";
+    src: url("./fonts/Bebas_Neue/BebasNeue-Regular.ttf");
+}
+
+@font-face {
+    font-family: "cabin";
+    src: url("./fonts/Cabin/Cabin-Italic-VariableFont_wdth\,wght.ttf");
+}
+
+
+header {
+    text-align: center;
+    background-color: $header-backround-color;
+    width: 100%;
+    height: 10%;
+    left: 0px;
+    top: 0px;
+    font-family: "bebas";
+    color: $header-color-letras;
+    text-decoration: none;
+    overflow-y: hidden;
+
+    h1 {
+        color: $header-color-letras;
+        text-align: center;
+        font-size: 70px;
+        font-family: "bebas";
+        letter-spacing: 5px;
+        font-weight: 50;
+    }
+
+    .centrar {
+        text-align: center;
+
+    }
+
+    .link {
+        text-align: center;
+        align-items: stretch;
+        width: 100%;
+        justify-content: space-around;
+        display: block;
+
+    }
+
+    a {
+        color: $header-color-letras;
+        text-decoration: none;
+        padding: 1rem;
+
+        &:hover {
+            color: $color-texto;
+
+        }
+    }
+
+}
+
+p {
+    font-family: "cabin";
+    color: $color-texto;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.principal {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.imagenPrincipal {
+    width: 90%;
+    height: 90%;
+    object-fit: cover;
+    margin-left: 15px;
+}
+
+.gridInicio {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+
+    .gridInicioGaleria {
+        width: 70%;
+        height: 70%;
+        object-fit: cover;
+        margin-left: 15px;
+    }
+}
+
+.login {
+    width: 100%;
+    text-align: center;
+    font-family: "bebas";
+
+    a {
+        color: $color-titulos;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        text-decoration: none;
+
+        &:hover {
+            color: $color-texto;
+
+        }
+    }
+}
+
+.contenedorLogin {
+    width: 500px;
+    margin-left: 33%;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+footer {
+    background-color: $footer-backround-color;
+    margin-top: auto;
+    display: flex;
+    justify-content: space-evenly;
+
+    i {
+        font-size: 23px;
+    }
+}
+
+h3 {
+
+    font-family: "cabin";
+    color: $color-texto;
+    text-align: center;
+
+}
+
+button {
+    padding-bottom: 10px;
+}
+
+h5 {
+    text-align: center;
+    font-family: "bebas";
+}
+
+.formularios {
+    font-family: "bebas";
+}
+
+.wMediaQuery {
+    width: 50%;
+}
+
+@media screen and (min-width:1200px) {
+    .principal {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto auto;
+
+        .imagenPrincipal {
+            width: 90%;
+            height: 90%;
+            object-fit: cover;
+        }
+    }
+
+    .imagenPrincipal {
+        width: 90%;
+        height: 90%;
+        object-fit: cover;
+    }
+
+    .gridInicio {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto auto;
+
+    }
+
+
+
+    .galeria {
+        overflow-x: hidden;
+
+        .gridInicioGaleria {
+            width: 70%;
+            height: 70%;
+            object-fit: cover;
+        }
+    }
+
+    header {
+        overflow-x: hidden;
+    }
+}
+
+.imagenesProductos {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+
+}
+
+
+@media screen and (max-width: 320px) {
+
+    header {
+        overflow-x: hidden;
+    }
+
+    footer {
+        overflow-x: hidden;
+
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .galeria {
+        text-align: center;
+        margin-bottom: 20px;
+        padding: 5px;
+        flex-direction: row;
+        align-content: stretch;
+        width: 60%;
+
+        .imgGaleria {
+            width: 60%;
+
+        }
+
+    }
+
+    h3 {
+        display: flex;
+        font-family: "bebas";
+        color: $header-backround-color;
+        text-align: center;
+        width: 60%;
+
+    }
+
+    p {
+        font-family: "cabin";
+        color: $color-texto;
+        text-align: center;
+    }
+
+    footer {
+        color: $footer-backround-mobile;
+    }
+
+    .gridInicio {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        overflow-x: hidden;
+
+        .gridInicioGaleria {
+            width: 50px;
+            height: 50px;
+            object-fit: cover;
+            overflow-x: hidden;
+        }
+    }
+
+
+    .principal {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        overflow-x: hidden;
+
+        .imagenPrincipal {
+            width: 50%;
+            height: 50%;
+            margin-top: 10px;
+            margin-bottom: 80px;
+            overflow-x: hidden;
+        }
+    }
+
+
+    h2 {
+        display: flex;
+        font-family: "bebas";
+        color: $header-backround-color;
+        text-align: center;
+        width: 60%;
+        overflow-y: hidden;
+
+    }
+    .wMediaQuery {
+        width: 100%;
+    }
+}

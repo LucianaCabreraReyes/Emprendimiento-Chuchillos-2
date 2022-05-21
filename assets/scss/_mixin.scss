@@ -1,0 +1,7 @@
+@mixin boton ($margin) {
+    margin-top: $margin;  
+}
+
+.boton {
+    @include boton (15px);
+}

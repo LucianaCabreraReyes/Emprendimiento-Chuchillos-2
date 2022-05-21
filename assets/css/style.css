@@ -1,356 +1,227 @@
-* {
-    padding: 0px;
-    margin: 0px;
-}
+.boton {
+  margin-top: 15px; }
 
-h1 {
+.botonInstagram {
+  color: #e01f3f; }
+
+.botonFacebook {
+  color: #272774; }
+
+.botonWhatsApp {
+  color: #31c531; }
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box; }
+
+h2 {
+  font-family: "bebas";
+  color: #2b2626;
+  letter-spacing: 2px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center; }
+
+@font-face {
+  font-family: "bebas";
+  src: url("./fonts/Bebas_Neue/BebasNeue-Regular.ttf"); }
+
+@font-face {
+  font-family: "cabin";
+  src: url("./fonts/Cabin/Cabin-Italic-VariableFont_wdth,wght.ttf"); }
+
+header {
+  text-align: center;
+  background-color: black;
+  width: 100%;
+  height: 10%;
+  left: 0px;
+  top: 0px;
+  font-family: "bebas";
+  color: snow;
+  text-decoration: none; }
+  header h1 {
     color: snow;
     text-align: center;
     font-size: 70px;
     font-family: "bebas";
     letter-spacing: 5px;
-    font-weight: 50;
-}
-
-.centrar {
-    text-align: center;
-}
-
-
-h2 {
-    font-family: "cabin";
-    color: rgb(43, 38, 38);
-    letter-spacing: 2px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-
-}
-
-p {
-    font-family: "cabin";
-    color: grey;
-    margin-top: 10px;
-    text-align: justify;
-}
-
-@font-face {
-    font-family: "bebas";
-    src: url("./fonts/Bebas_Neue/BebasNeue-Regular.ttf");
-}
-
-@font-face {
-    font-family: "cabin";
-    src: url("./fonts/Cabin/Cabin-Italic-VariableFont_wdth\,wght.ttf");
-}
-
-.card__redes {
-    width: 50px;
-    height: 30px;
-    margin-left: 300px;
-}
-
-.card__fb {
-    width: 28px;
-    margin-left: 300px;
-    text-decoration: none;
-}
-
-header {
-    text-align: center;
-    background-color: black;
-    width: 100%;
-    height: 10%;
-    left: 0px;
-    top: 0px;
-    font-family: "bebas";
-    color: snow;
-    text-decoration: none;
-
-}
-
-.principal {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-}
-
-.imagenPrincipal {
-    width: 90%;
-    height: 90%;
-    object-fit: cover;
-    margin-left: 15px;
-}
-
-.gridInicio {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-
-}
-
-.gridInicioGaleria {
-    width: 70%;
-    height: 70%;
-    object-fit: cover;
-    margin-left: 15px;
-}
-
-.link {
+    font-weight: 50; }
+  header .centrar {
+    text-align: center; }
+  header .link {
     text-align: center;
     align-items: stretch;
     width: 100%;
-    padding: 1rem;
-    text-decoration: none;
     justify-content: space-around;
-    display: block;
-
-}
-
-.link a {
+    display: block; }
+  header a {
     color: snow;
-    padding: 1rem;
-}
+    text-decoration: none;
+    padding: 1rem; }
+    header a:hover {
+      color: grey; }
+
+p {
+  font-family: "cabin";
+  color: grey;
+  margin-top: 10px;
+  text-align: center; }
+
+.principal {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  align-items: center; }
+
+.imagenPrincipal {
+  width: 90%;
+  height: 90%;
+  object-fit: cover;
+  margin-left: 15px; }
+
+.gridInicio {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  align-items: center; }
+  .gridInicio .gridInicioGaleria {
+    width: 70%;
+    height: 70%;
+    object-fit: cover;
+    margin-left: 15px; }
 
 .login {
-    width: 100%;
-    text-align: center;
-    font-family: "bebas";
-
-}
-
-.login a {
-    color: rgb(43, 38, 38);
+  width: 100%;
+  text-align: center;
+  font-family: "bebas"; }
+  .login a {
+    color: #2b2626;
     padding-left: 1rem;
     padding-right: 1rem;
-}
+    text-decoration: none; }
+    .login a:hover {
+      color: grey; }
+
+.contenedorLogin {
+  width: 500px;
+  margin-left: 33%; }
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; }
 
 footer {
-    background-color: grey;
-    margin-top: 300px;
-}
-
-.formularios {
-    font-family: "cabin";
-    color: rgb(43, 38, 38);
-}
+  background-color: grey;
+  margin-top: auto;
+  display: flex;
+  justify-content: space-evenly; }
+  footer i {
+    font-size: 23px; }
 
 h3 {
-    margin-left: 40px;
-    font-family: "cabin";
-    color: grey;
-    width: 400px;
-    margin-top: 10px;
-}
+  font-family: "cabin";
+  color: grey;
+  text-align: center; }
 
-.login__btn {
-    background-color: black;
-    border-radius: 3px;
-    width: 30%;
-    padding: 2px;
-    text-decoration: none;
-    font-family: "Cabin";
-    color: snow;
-    text-align: center;
-}
+button {
+  padding-bottom: 10px; }
 
-.singIn__btn {
-    background-color: black;
-    border-radius: 3px;
-    width: 30%;
-    padding: 2px;
-    text-decoration: none;
-    font-family: "Cabin";
-    color: snow;
-    text-align: center;
-}
+h5 {
+  text-align: center;
+  font-family: "bebas"; }
 
-.send__btn {
-    background-color: black;
-    border-radius: 3px;
-    width: 30%;
-    padding: 2px;
-    text-decoration: none;
-    font-family: "Cabin";
-    color: snow;
-    text-align: center;
-}
+.formularios {
+  font-family: "bebas"; }
 
-.contenedorGaleria {
+@media screen and (min-width: 1200px) {
+  .principal {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto; }
+    .principal .imagenPrincipal {
+      width: 90%;
+      height: 90%;
+      object-fit: cover; }
+  .imagenPrincipal {
+    width: 90%;
+    height: 90%;
+    object-fit: cover; }
+  .gridInicio {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto; }
+  .galeria {
+    overflow-x: hidden; }
+    .galeria .gridInicioGaleria {
+      width: 70%;
+      height: 70%;
+      object-fit: cover; }
+  header {
+    overflow-x: hidden; } }
 
-}
+.imagenesProductos {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 30px;
+  margin-right: 30px; }
 
-.galeria {
+@media screen and (max-width: 320px) {
+  header {
+    overflow-x: hidden; }
+  footer {
+    overflow-x: hidden; }
+  body {
+    overflow-x: hidden; }
+  .galeria {
     text-align: center;
     margin-bottom: 20px;
     padding: 5px;
     flex-direction: row;
     align-content: stretch;
-
-}
-.imgGaleria {
-    height: 300px;
-    width: 300px;
-    transition: height 2s;
-    overflow-x: hidden;
-}
-.imgGaleria:hover {
-    height: 500px;
-}
-
-.fotos__content img {
-    width: 100%;
-}
-@media screen and (min-width:1200px) {
-    .principal {
-        display: grid;
-        grid-template-columns: auto auto auto;
-        grid-template-rows: auto auto auto;
-    }
-
-    .imagenPrincipal {
-        width: 90%;
-        height: 90%;
-        object-fit: cover;
-    }
-
-    .gridInicio {
-        display: grid;
-        grid-template-columns: auto auto auto;
-        grid-template-rows: auto auto auto;
-
-    }
-
-    .tituloProductos {
-        margin-top: 100px;
-    }
-
-    .galeria {
-        overflow-x: hidden;
-    }
-
-    .gridInicioGaleria {
-        width: 70%;
-        height: 70%;
-        object-fit: cover;
-    }
-
-    header {
-        overflow-x: hidden;
-    }
-
-}
-
-
-@media screen and (max-width: 320px) {
-    .contenedorGaleria {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-        overflow-x: hidden;
-
-    }
-
-    header {
-        overflow-x: hidden;
-    }
-
-    footer {
-        overflow-x: hidden;
-
-    }
-
-    body {
-        overflow-x: hidden;
-    }
-
-    .galeria {
-        text-align: center;
-        margin-bottom: 20px;
-        padding: 5px;
-        flex-direction: row;
-        align-content: stretch;
-        width: 60%;
-
-    }
-
-    .imgGaleria {
-        width: 60%;
-
-    }
-
-    h3 {
-        display: flex;
-        font-family: "cabin";
-        color: black;
-        text-align: center;
-        width: 60%;
-
-    }
-
-    p {
-        font-family: "cabin";
-        color: grey;
-        text-align: center;
-    }
-
-    footer {
-        background-color: rgb(48, 46, 46);
-
-    }
-
-    .card__redes {
-        width: 5%;
-        height: 5%;
-
-
-    }
-
-    .card__fb {
-        width: 3%;
-        text-decoration: none;
-
-
-    }
-
-    .gridInicio {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-        overflow-x: hidden;
-    }
-
-    .gridInicioGaleria {
-        width: 50px;
-        height: 50px;
-        object-fit: cover;
-        overflow-x: hidden;
-    }
-
-    .principal {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-        overflow-x: hidden;
-    }
-
-    .imagenPrincipal {
-        width: 50%;
-        height: 50%;
-        margin-top: 10px;
-        margin-bottom: 80px;
-        overflow-x: hidden;
-    }
-
-    h2 {
-        display: flex;
-        font-family: "cabin";
-        color: black;
-        text-align: center;
-        width: 60%;
-        overflow-y: hidden;
-
-    }
-}
+    width: 60%; }
+    .galeria .imgGaleria {
+      width: 60%; }
+  h3 {
+    display: flex;
+    font-family: "bebas";
+    color: black;
+    text-align: center;
+    width: 60%; }
+  p {
+    font-family: "cabin";
+    color: grey;
+    text-align: center; }
+  footer {
+    color: #302e2e; }
+  .gridInicio {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    overflow-x: hidden; }
+    .gridInicio .gridInicioGaleria {
+      width: 50px;
+      height: 50px;
+      object-fit: cover;
+      overflow-x: hidden; }
+  .principal {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    overflow-x: hidden; }
+    .principal .imagenPrincipal {
+      width: 50%;
+      height: 50%;
+      margin-top: 10px;
+      margin-bottom: 80px;
+      overflow-x: hidden; }
+  h2 {
+    display: flex;
+    font-family: "bebas";
+    color: black;
+    text-align: center;
+    width: 60%;
+    overflow-y: hidden; } }
