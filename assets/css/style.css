@@ -40,7 +40,8 @@ header {
   top: 0px;
   font-family: "bebas";
   color: snow;
-  text-decoration: none; }
+  text-decoration: none;
+  overflow-y: hidden; }
   header h1 {
     color: snow;
     text-align: center;
@@ -59,7 +60,7 @@ header {
   header a {
     color: snow;
     text-decoration: none;
-    padding: 1rem; }
+    padding: 0 1rem; }
     header a:hover {
       color: grey; }
 
@@ -136,6 +137,9 @@ h5 {
 
 .formularios {
   font-family: "bebas"; }
+
+.wMediaQuery {
+  width: 50%; }
 
 @media screen and (min-width: 1200px) {
   .principal {
@@ -224,4 +228,6 @@ h5 {
     color: black;
     text-align: center;
     width: 60%;
-    overflow-y: hidden; } }
+    overflow-y: hidden; }
+  .wMediaQuery {
+    width: 100%; } }
