@@ -60,7 +60,7 @@ header {
   header a {
     color: snow;
     text-decoration: none;
-    padding: 1rem; }
+    padding: 0 1rem; }
     header a:hover {
       color: grey; }
 
